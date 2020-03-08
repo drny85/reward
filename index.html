@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Compiled and minified CSS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="rewards.css">
+
+    <title>Verizon Rewards</title>
+
+    <style>
+        .outcome>p {
+            list-style: square;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h4 class="center">Rewards Program</h4>
+        <div style="height: 100vh;" class="card">
+            <div style="padding: 12px;">
+                <a class="btn black" href="/index.html">Check Earnings</a>
+                <button onclick="reset()" style="padding-left: 30px; padding-right: 30px;"
+                    class="btn orange right">Reset</button>
+            </div>
+
+            <div class="card-content">
+                <div class="card-tile">
+                    <p class="center bold">Please Select one form each row</p>
+                    <br>
+
+                </div>
+                <div class="row">
+                    <form id="form">
+                        <div class="input-field col s12 m4">
+                            <select id="fios" name="fios">
+                                <option value="" disabled selected>Pick One</option>
+                                <option value="any">Fios Internet 200</option>
+                                <option value="any">Fios Internet 400</option>
+                                <option value="gigabit">Fios Gigabit</option>
+                            </select>
+                            <label>Fios Products</label>
+                        </div>
+                        <div class="input-field col s12 m4">
+                            <select id="wireless" name="wireless">
+                                <option value="" disabled selected>Pick One</option>
+                                <option value="regular">Any Wireless Plan</option>
+                                <option value="unlimited">Any Unlimited Wireless Plan</option>
+
+                            </select>
+                            <label>Wireless Plans</label>
+                        </div>
+                        <div class="input-field col s12 m4">
+                            <select id="customer" name="customer">
+                                <option value="" disabled selected>Pick One</option>
+                                <option value="none">Non Verizon Customer</option>
+                                <option value="existing">Existing Wireless Customer</option>
+                                <option value="new">New to Wireless and Fios</option>
+                            </select>
+                            <label>Customer Type</label>
+                        </div>
+                    </form>
+                </div>
+                <div style="text-transform: capitalize; font-weight: bold; font-style: italic;" class="outcome">
+
+                </div>
+                <div class="card-footer center">
+
+                </div>
+                <div class="card-footer1 center">
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="/rewards.js">
+
+    </script>
+</body>
+
+</html>
